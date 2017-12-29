@@ -1,6 +1,6 @@
 {
     "name": "wx-mini-qrcode",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "QRCode component for WeiXin Mini Program",
     "main": "src/index.js",
     "directories": {},
@@ -18,6 +18,10 @@
         "email": "670046852@qq.com"
     },
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/flyingsouthwind/wx-mini-qrcode"
+    },
     "devDependencies": {
         "gulp": "^3.9.1",
         "gulp-eslint": "^2.0.0",

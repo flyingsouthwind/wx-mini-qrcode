@@ -1,3 +1,52 @@
+微信小程序专用的二维码组件，支持base64输出和canvas绘制两种方式。
+
+## 使用
+
+```
+const qrcode = require('wx-mini-qrcode/src/index');
+
+Page({
+    data: {
+        qrcode0: ''
+    },
+    onReady(){
+        let text = 'https://m.baidu.com';
+
+        // 输出base64格式
+        let qrcode0 = qrcode.outputQRCodeBase64(text, {
+            size: 400,
+            color: '#CC6600',
+            padding: 16,
+            background: '#FFCC99'
+        });
+
+        this.setData({
+            qrcode0
+        })
+
+        // canvas内绘制模式一
+        qrcode.drawQRCodeToCanvas(text, {
+            ctx: 'qrcode1',
+            size: 200,
+            color: '#CC6600',
+            padding: 16,
+            background: '#FFCC99'
+        });
+
+        // canvas内绘制模式二
+        let qrcode2 = wx.createCanvasContext('qrcode2');
+        qrcode.drawQRCodeToCanvas(text, {
+            ctx: qrcode2,
+            size: 200,
+            color: '#CC6600',
+            padding: 16,
+            background: '#FFCC99'
+        });
+        qrcode2.draw();
+    }
+});
+```
+
 ## API
 
 #### 1. outputQRCodeBase64: function (text,  options)

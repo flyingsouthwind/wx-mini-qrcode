@@ -1,0 +1,33 @@
+{
+    "name": "wx-mini-qrcode",
+    "version": "1.0.0",
+    "description": "QRCode component for WeiXin Mini Program",
+    "main": "src/index.js",
+    "directories": {},
+    "scripts": {
+        "eslint": "gulp eslint",
+        "dev": "gulp watch"
+    },
+    "private": false,
+    "keywords": [
+        "qrcode",
+        "Mini Program"
+    ],
+    "author": {
+        "name": "Jing Chen",
+        "email": "670046852@qq.com"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "del": "^2.2.0",
+        "gulp": "^3.9.1",
+        "gulp-eslint": "^2.0.0",
+        "gulp-less": "^3.3.0",
+        "karma": "^1.3.0",
+        "karma-chai": "^0.1.0",
+        "karma-chrome-launcher": "^2.0.0",
+        "karma-mocha": "^1.2.0",
+        "karma-mocha-reporter": "^2.2.0",
+        "mocha": "^3.1.2"
+    }
+}

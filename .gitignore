@@ -1,0 +1,7 @@
+.DS_Store
+.git
+*.zip
+*.gzip
+.idea
+*.log
+node_modules

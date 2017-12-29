@@ -1,3 +1,9 @@
-<view class="">
-    <image mode="" src=""></image>
+<view class="qrcode0">
+    <image mode="widthFix" src="{{qrcode0}}"></image>
+</view>
+<view class="qrcode1">
+    <canvas canvas-id="qrcode1"></canvas>
+</view>
+<view class="qrcodd2">
+    <canvas canvas-id="qrcode2"></canvas>
 </view>

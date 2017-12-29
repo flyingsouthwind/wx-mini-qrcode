@@ -1,0 +1,13 @@
+view {
+    margin: 0 auto 30rpx;
+}
+
+.qrcode0 image {
+    width: 400rpx;
+}
+
+.qrcode1 canvas,
+.qrcodd2 canvas{
+    width: 500rpx;
+    height: 500rpx;
+}

@@ -25,7 +25,7 @@ function QR8bitByte(data) {
 
 QR8bitByte.prototype = {
 
-	getLength : function(buffer) {
+	getLength : function() {
 		return this.data.length;
 	},
 

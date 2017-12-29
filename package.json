@@ -1,6 +1,6 @@
 {
     "name": "wx-mini-qrcode",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "QRCode component for WeiXin Mini Program",
     "main": "src/index.js",
     "directories": {},

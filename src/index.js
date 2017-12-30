@@ -2,7 +2,7 @@
 
 // 模块
 const gifImg = require('./lib/gifImg');
-const Encode = require('./lib/encode');
+const encode = require('./lib/encode');
 const QRCode = require('./lib/qrcode');
 
 // 变量
@@ -12,7 +12,7 @@ const MathR = Math.round;
 
 // 输出为base64
 const outputQRCodeBase64 = function (text, options) {
-    let txt = Encode.utf16to8(text),
+    let txt = encode.utf16to8(text),
         ecc = options.ecc || 'H',
         size = options.size || 256,
         typeNumber = -1,
@@ -48,7 +48,7 @@ const outputQRCodeBase64 = function (text, options) {
 const drawQRCodeToCanvas = function (text, options) {
     let x = options.x || 0,
         y = options.y || 0,
-        txt = Encode.utf16to8(text),
+        txt = encode.utf16to8(text),
         ctx = typeof options.ctx === 'string' ? wx.createCanvasContext(options.ctx) : options.ctx,
         ecc = options.ecc || 'H',
         size = typeof options.size === 'number' ? MathF(options.size) : 256,

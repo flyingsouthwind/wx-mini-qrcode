@@ -3,10 +3,8 @@
  */
 'use strict';
 
-module.exports = (function () {
-    let _e = {};
-
-    _e.utf16to8 = function (str) {
+let encode = {
+    utf16to8(str) {
         let out, i, len, c;
         out = '';
         len = str.length;
@@ -24,9 +22,9 @@ module.exports = (function () {
             }
         }
         return out;
-    };
+    },
 
-    _e.utf8to16 = function (str) {
+    utf8to16(str) {
         let out, i, len, c;
         let char2, char3;
         out = '';
@@ -64,7 +62,7 @@ module.exports = (function () {
             }
         }
         return out;
-    };
+    }
+};
 
-    return _e;
-})();
+module.exports = encode;

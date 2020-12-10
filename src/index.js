@@ -11,7 +11,7 @@ const MathF = Math.floor;
 const MathR = Math.round;
 
 // 输出为base64
-const outputQRCodeBase64 = function (text, options) {
+const outputQRCodeBase64 = function (text, options = {}) {
     let txt = encode.utf16to8(text),
         ecc = options.ecc || 'H',
         size = options.size || 256,
@@ -45,7 +45,7 @@ const outputQRCodeBase64 = function (text, options) {
 }
 
 // 绘制到canvas
-const drawQRCodeToCanvas = function (text, options) {
+const drawQRCodeToCanvas = function (text, options = {}) {
     let x = options.x || 0,
         y = options.y || 0,
         txt = encode.utf16to8(text),
